@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div id="root"></div>
+
+    <p>
+        <h2>Thy data <%= data.userQuery %> </h2>
+        <% if (data.isLoggedIn) { %>
+            <h3>You are logged in as : <%= data.username %></h3>
+        <% } %>
+        <ul>
+            <% data.searchResults.forEach(result => { %>
+                <li><%= result  %></li>
+            <% }) %>
+        </ul>
+    </p>
+
+</body>
+</html>
