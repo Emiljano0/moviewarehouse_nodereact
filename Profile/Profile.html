@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:margin-bottom="http://www.w3.org/1999/xhtml">
+<head>
+	<title>MOVIEWAREHOUSE</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Optional JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<!-- Font Library -->
+	 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+
+	<!-- Icons fa class -->
+	<script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	
+	<!-- My CSS -->
+    <link rel="stylesheet" href="Profile.css" >
+	
+	
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="mainNavBar">
+
+		<!-- Logo -->
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand majlogo">VideoWarehouse</a>
+			</div>
+
+		<!-- Menu Items -->
+			<ul class="nav navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="movies.html">MOVIES</a></li>
+				<li class="nav-item"><a class="nav-link" href="series.html">SERIES</a></li>
+				<li class="nav-item"><a class="nav-link" href="documentaries.html">DOCUMENTARIES</a></li>
+
+				<!-- drop down menu -->
+				<li class="nav-item dropdown ">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_list_item" href="#">
+						CATEGORIES <span class="caret"></span>
+					</a>
+					<div class="dropdown-menu" aria_labelledby="dropdown_list_item" >
+						<a class="dropdown-item" href="war.html">War</a>
+						<a class="dropdown-item" href="detective.html">Detective</a>
+						<a class="dropdown-item" href="other_worlds.html">Other Worlds</a>
+						<a class="dropdown-item" href="romantic.html">Romantic</a>
+					</div>
+				</li>
+			
+				<form class="form-inline" action="search.html" method="GET" value="">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search.." aria-label="Search" name="q"
+					value="">
+					<input class="btn btn-success my-sm-0" type="submit" name="submit" value="Search"/>
+				</form>
+			</ul>
+
+
+			<!-- LogIn -->
+			<ul class="nav navbar-nav ml-auto">			
+				<li class="nav-item">
+					<a class="nav-link" href="login.html" style="text-align:right;">
+						<i class="fa fa-user"></i>
+							Sherlock of Movies
+					</a>
+				</li>
+			</ul>
+				
+
+		</div>
+	</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2 sticky-top Profile-info">
+				</br></br>
+				<img src="Pictures/login_user.png" class="img-responsive Profile-picture"></br></br>
+				<h6>Sherlock of Movies</h6></br>
+				<div class="button_class">
+					<input type="button" value="Review-Rates"></br></br>
+					<input type="button" value="Comments"></br></br>
+					<input type="button" value="Favorites"></br></br>
+				</div>
+			</div>
+			<div class="col-md-8">
+				</br></br>
+				<div class="content">
+					<div class="row">
+						<div class="col-md-12 title">
+							<h6>Sherlock of Movies Reviewed</h6>
+						</div>
+					</div>
+					<div class="row content-element">
+						<div class="col-md-5">
+							<a href="https://www.imdb.com/title/tt2575988/?ref_=ttep_ep_tt">
+								<img src="https://fanart.tv/fanart/tv/277165/tvthumb/silicon-valley-5915a9878d077.jpg" 
+									class="img-responsive imazh" >
+							</a>
+						</div>
+						<div class="col-md-7">
+							<h2>Silicon Valley</h2>
+							<h3>Terms of Service (S04 E02)</h3>
+							<h3>8.6</h3>
+							<h6 class="date">06/11/2019</h6>
+						</div>
+					</div><hr>
+					
+					<div class="row">
+						<div class="col-md-12 title">
+							<h6>Sherlock of Movies Commented On</h6>
+						</div>
+					</div>
+					<div class="row content-element">
+						<div class="col-md-5">
+							<a href="https://www.imdb.com/title/tt2575988/?ref_=ttep_ep_tt">
+								<img src="https://fanart.tv/fanart/tv/277165/tvthumb/silicon-valley-5915a9878d077.jpg" 
+									class="img-responsive imazh" >
+							</a>
+						</div>
+						<div class="col-md-7">
+								<h2>Silicon Valley</h2>
+								<h3>Terms of Service (S04 E02)</h3>
+							<h3>8.6</h3>
+							<a href="#" class="anchor">
+								<h5>Go To Comment</h5>
+							</a>
+							<h6 class="date">06/11/2019</h6>
+						</div>
+					</div><hr>
+					
+					<div class="row">
+						<div class="col-md-12 title">
+							<h6>Sherlock of Movies Commented On</h6>
+						</div>
+					</div>
+					<div class="row content-element">
+						<div class="col-md-5">
+							<a href="https://www.imdb.com/title/tt4102996/?ref_=ttep_ep5">
+								<img src="Pictures/modern_family_carousel.jpg" 								
+									class="img-responsive imazh" >
+							</a>
+						</div>
+						<div class="col-md-7">
+								<h2>Modern Family</h2>
+								<h3>Won't You Be My Neighbour (S06 E05)</h3>
+							<h3>8.6</h3>
+							<a href="#" class="anchor">
+								<h5>Go To Comment</h5>
+							</a>
+							<h6 class="date">05/01/2017</h6>
+						</div>
+					</div><hr>
+					
+					<div class="row">
+						<div class="col-md-12 title">
+							<h6>Sherlock of Movies Commented On</h6>
+						</div>
+					</div>
+					<div class="row content-element">
+						<div class="col-md-5">
+							<a href="https://www.imdb.com/title/tt2575988/?ref_=ttep_ep_tt">
+								<img src="https://fanart.tv/fanart/tv/277165/tvthumb/silicon-valley-5915a9878d077.jpg" 
+									class="img-responsive imazh" >
+							</a>
+						</div>
+						<div class="col-md-7">
+								<h2>Silicon Valley</h2>
+								<h3>Terms of Service (S04 E02)</h3>
+							</a>
+							<h3>8.6</h3>
+							<a href="#" class="anchor">
+								<h5>Go To Comment</h5>
+							</a>
+							<h6 class="date">06/11/2019</h6>
+						</div>
+					</div><hr>
+					
+					<div class="row">
+						<div class="col-md-12 title">
+							<h6>Sherlock of Movies Commented On</h6>
+						</div>
+					</div>
+					<div class="row content-element">
+						<div class="col-md-5">
+							<a href="https://www.imdb.com/title/tt2575988/?ref_=ttep_ep_tt">
+								<img src="Pictures/modern_family_carousel.jpg" 	 
+									class="img-responsive imazh" >
+							</a>
+						</div>
+						<div class="col-md-7">
+								<h2>Modern Family</h2>
+								<h3>Won't You Be My Neighbour (S06 E05)</h3>
+							</a>
+							<h3>8.6</h3>
+							<a href="#" class="anchor">
+								<h5>Go To Comment</h5>
+							</a>
+							<h6 class="date">05/01/2017</h6>
+						</div>
+					</div><hr>
+					
+					<div class="row">
+						<div class="col-md-12 title">
+							<h6>Sherlock of Movies Favorited</h6>
+						</div>
+					</div>
+					<div class="row content-element">
+						<div class="col-md-5">
+							<a href="https://www.imdb.com/title/tt2575988/?ref_=ttep_ep_tt">
+								<img src="https://fanart.tv/fanart/tv/277165/tvthumb/silicon-valley-5915a9878d077.jpg" 
+									class="img-responsive imazh" >
+							</a>
+						</div>
+						<div class="col-md-7">
+								<h2>Silicon Valley</h2>
+								<h3>Terms of Service (S04 E02)</h3>
+							<h3>8.6</h3>
+							<h6 class="date">12/10/2019</h6>
+						</div>
+					</div><hr>
+					
+					<div class="row">
+						<div class="col-md-12 title">
+							<h6>Sherlock of Movies Commented On</h6>
+						</div>
+					</div>
+					<div class="row content-element">
+						<div class="col-md-5">
+							<a href="https://www.imdb.com/title/tt2575988/?ref_=ttep_ep_tt">
+								<img src="https://fanart.tv/fanart/tv/277165/tvthumb/silicon-valley-5915a9878d077.jpg" 
+									class="img-responsive imazh" >
+							</a>
+						</div>
+						<div class="col-md-7">
+								<h2>Modern Family</h2>
+								<h3>Won't You Be My Neighbour (S06 E05)</h3>
+							<h3>8.6</h3>
+							<a href="#" class="anchor">
+								<h5>Go To Comment</h5>
+							</a>
+							<h6 class="date">05/01/2017</h6>
+						</div>
+					</div><hr>
+					
+					<div class="row">
+						<div class="col-md-12 title">
+							<h6>Sherlock of Movies Commented On</h6>
+						</div>
+					</div>
+					<div class="row content-element">
+						<div class="col-md-5">
+							<a href="https://www.imdb.com/title/tt2575988/?ref_=ttep_ep_tt">
+								<img src="https://fanart.tv/fanart/tv/277165/tvthumb/silicon-valley-5915a9878d077.jpg" 
+									class="img-responsive imazh" >
+							</a>
+						</div>
+						<div class="col-md-7">
+								<h2>Silicon Valley</h2>
+								<h3>Terms of Service (S04 E02)</h3>
+							<h3>8.6</h3>
+							<a href="#" class="anchor">
+								<h5>Go To Comment</h5>
+							</a>
+							<h6 class="date">06/11/2019</h6>
+						</div>
+					</div><hr>
+					
+				</div>
+			</div>
+			<div class="col-md-2" style="padding-top:70px">
+				jadajada
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

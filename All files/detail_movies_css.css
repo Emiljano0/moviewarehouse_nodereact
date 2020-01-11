@@ -1,0 +1,132 @@
+body {
+	background-color:#DCD9CD ;
+}
+
+div.inline_carousel_element {
+	text-align:center;
+	display:inline-block;
+	background-color:black;
+	width:80%;
+}
+
+img.imazh_crsl {
+	width:100%;
+	height:200px;
+	display:inline-block;
+}
+
+
+a.majlogo {
+	font-family: 'Courgette';
+	font-size: 24px;
+}
+
+img.imazh {
+	padding-bottom:10px;
+	width:250px;
+	background-color:black;
+	height:350px;
+	margin-top:60px;
+}
+
+
+div.inlinemod {
+	text-align:center;
+	padding-top: 60px;
+	display:inline-block;
+	background-color:black;
+	width:100%;
+	color:grey;
+}
+
+div#my_divPlayPause {
+	background: #333;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 576px) {
+
+img.imazh {
+	width:100px;
+	height:150px;
+}
+
+div.inlinemod{
+	width:100%;
+}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+img.imazh {
+	width:150px;
+	height:250px;
+}
+
+div.inlinemod{
+	width:100%;
+}
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+img.imazh {
+	width:200px;
+	height:300px;
+}
+
+div.inlinemod{
+	width:100%;
+}
+
+@media only screen and (min-width: 1500px) {
+
+img.imazh {
+	width:300px;
+	height:400px;
+}
+
+div.inlinemod{
+	width:100%;
+}
+
+
+@media only screen and (min-width: 1800px) {
+
+img.imazh {
+	width:400px;
+	height:550px;
+}
+
+div.inlinemod{
+	width:100%;
+}
+
+}

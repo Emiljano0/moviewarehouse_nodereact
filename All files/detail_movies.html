@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:margin-bottom="http://www.w3.org/1999/xhtml">
+<head>
+	<title>MOVIEWAREHOUSE</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<!-- Optional JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<!-- Font Library -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="detail_movies_css.css">
+	
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-md navbar-dark bg-primary fixed-top">
+
+		<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#mainNavBar">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="mainNavBar">
+
+		<!-- Logo -->
+			<div class="navbar-header">
+				<a href="/moviewarehouse/" class="navbar-brand majlogo">MovieWarehouse</a>
+			</div>
+
+		<!-- Menu Items -->
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="/moviewarehouse/movies/">MOVIES</a></li>
+				<li class="nav-item"><a class="nav-link" href="/moviewarehouse/series/">SERIES</a></li>
+				<li class="nav-item"><a class="nav-link" href="/moviewarehouse/documentaries/">DOCUMENTARIES</a></li>
+
+				<!-- drop down menu -->
+				<li class="nav-item dropdown ">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" data-target="dropdown_list_item" href="#">
+						CATEGORIES <span class="caret"></span>
+					</a>
+					<div class="dropdown-menu" aria_labelledby="dropdown_list_item" >
+						<a class="dropdown-item" href="/moviewarehouse/war/">War</a>
+						<a class="dropdown-item" href="/moviewarehouse/detective/">Detective</a>
+						<a class="dropdown-item" href="/moviewarehouse/other_worlds/">Other Worlds</a>
+						<a class="dropdown-item" href="/moviewarehouse/romantic/">Romantic</a>
+					</div>
+				</li>
+			</ul>
+
+			<form class="form-inline" action="/moviewarehouse/search/" method="GET" value="{{request.GET.q}}">
+				<input class="form-control mr-sm-2 srch" type="text" placeholder="Search.." aria-label="Search" name="q"
+				value="">
+				<input class="btn btn-success my-sm-0" type="submit" name="submit" value="Search"/>
+			</form>
+		</div>
+	</nav>
+
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6 inlinemod"
+			style="background-color:black;">
+				<img src="Pictures/alita.jpg" class="img-responsive imazh">
+				<div id="mv-info">
+					<div class="mvi-content" style="text-align:left;">
+						<div class="mvic-desc">
+							<p>
+								<h3>Alita : Battle Angel</h3>
+							</p>
+						</div>
+						<div class="mvic-info">
+							<p> <strong>DIRECTOR : </strong>Robert Rodriguez</br>
+								<strong>RATING : </strong>7.4</br>
+								<strong>RELEASE DATE : </strong>6-02-2019</br>
+								<strong>BUDGET : </strong>170.000.000 $</br>
+								<strong>GROSS : </strong>404,852,543 $</br>
+								<strong>QUALITY : </strong>Full HD</br>
+								<strong>DESCRIPTION : </strong>A deactivated cyborg is 
+									revived, but cannot remember anything of her past life 
+									and goes on a quest to find out who she is.</br>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xl-7 col-lg-7 col-md-7 col-sm-7 col-xs-6" style="padding-top:80px;">
+				<div class="embed-responsive embed-responsive-16by9 inlinemod">
+					<video class="embed-responsive-item" height="auto"  width="100%"
+						   poster="Pictures/alita.jpg" controls>
+						<source src="{{ movie.movie_video.url }}" type="video/mp4">
+						<track src="{{ movie.movie_subtitles.url }}" kind="subtitles" srclang="en" label="English"/>
+					</video>
+				</div>
+				</br></br></br><hr>
+				
+				<p style="font-size:20px;">People who liked this also saw ...</p>
+				<div id="my-slider" class="carousel slide" data-ride="carousel">
+					<!-- indicators .nav 
+					<ul class="carousel-indicators">
+						<li data-target="#my-slider" data-slide-to="0" class="active"></li>
+						<li data-target="#my-slider" data-slide-to="1"></li>
+						<li data-target="#my-slider" data-slide-to="2"></li>
+					</ul> -->
+					
+					<!-- wrapper for slides -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="inline_carousel_element" style="margin-left:70px;">
+										<a href="https://www.imdb.com/title/tt0437086/?ref_=nv_sr_1?ref_=nv_sr_1">
+											<img src="Pictures/alita.jpg" alt="Alita poster" class="imazh_crsl"/>
+										</a>
+										<a href="https://www.imdb.com/title/tt0437086/?ref_=nv_sr_1?ref_=nv_sr_1">
+											<h6> ALIta </h6>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="inline_carousel_element" style="margin-left:20px;">
+										<a href="https://www.imdb.com/title/tt1442437/?ref_=nv_sr_1?ref_=nv_sr_1" >
+											<img src="Pictures/modernfamily.jpg" alt="Modern Family poster" class="imazh_crsl"/>
+										</a>
+										<a href="https://www.imdb.com/title/tt1442437/?ref_=nv_sr_1?ref_=nv_sr_1">
+											<h6> MOdern FamiLY </h6>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="inline_carousel_element" style="margin-left:-30px;">
+										<a href="https://www.imdb.com/title/tt0081846/?ref_=nv_sr_2?ref_=nv_sr_2" >
+											<img src="Pictures/cosmos.jpg" alt="Cosmos poster" class="imazh_crsl"/>
+										</a>
+										<a href="https://www.imdb.com/title/tt0081846/?ref_=nv_sr_2?ref_=nv_sr_2" >
+											<h6> coSMos </h6>
+										</a>
+									</div>
+								</div>	
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="inline_carousel_element" style="margin-left:70px;">
+										<a href="https://www.imdb.com/title/tt0437086/?ref_=nv_sr_1?ref_=nv_sr_1">
+											<img src="Pictures/alita.jpg" alt="Alita poster" class="imazh_crsl"/>
+										</a>
+										<a href="https://www.imdb.com/title/tt0437086/?ref_=nv_sr_1?ref_=nv_sr_1">
+											<h6> ALIta </h6>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="inline_carousel_element" style="margin-left:20px;">
+										<a href="https://www.imdb.com/title/tt1442437/?ref_=nv_sr_1?ref_=nv_sr_1" >
+											<img src="Pictures/modernfamily.jpg" alt="Modern Family poster" class="imazh_crsl"/>
+										</a>
+										<a href="https://www.imdb.com/title/tt1442437/?ref_=nv_sr_1?ref_=nv_sr_1">
+											<h6> MOdern FamiLY </h6>
+										</a>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="inline_carousel_element" style="margin-left:-30px;">
+										<a href="https://www.imdb.com/title/tt0081846/?ref_=nv_sr_2?ref_=nv_sr_2" >
+											<img src="Pictures/cosmos.jpg" alt="Cosmos poster" class="imazh_crsl"/>
+										</a>
+										<a href="https://www.imdb.com/title/tt0081846/?ref_=nv_sr_2?ref_=nv_sr_2" >
+											<h6> coSMos </h6>
+										</a>
+									</div>
+								</div>	
+							</div>
+						</div>
+					</div>
+					
+					
+					
+					<!-- controls or next and prev buttons --> 
+					<a class="left carousel-control-prev" href="#my-slider" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="right carousel-control-next" href="#my-slider" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a> 
+						
+				</div><hr>
+				
+			</div>
+			
+								
+			
+			<div class="col-xl-2 col-lg-2 col-md-2 col-sm-2" style="padding-top:100px;">
+				Insert ads here .
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

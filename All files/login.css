@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	background: url(Pictures/movie-cinema-deadpool.jpg) no-repeat;
+	background-size: 100%;
+}
+
+a.majlogo {
+	font-family: 'Courgette';
+	font-size: 24px;
+}
+
+.main-section {
+	font-family: 'Roboto';
+	background-size: cover;
+	margin: 0 auto;
+	margin-top: 130px;
+	padding: 0;
+}
+
+.modal-content {
+	background-color: #3b4652;
+	padding: 0 20px;
+}
+
+.user-img {
+	margin-top: -50px;
+	margin-bottom: 35px;
+}
+
+.user-img img {
+	height: 100px;
+	width: 100px;
+	border-radius: 5px;
+}
+
+.form-group {
+	margin-bottom: 25px;
+}
+
+button {
+	width: 40%;
+}
+
+.btn {
+	background-color: #5cb85c;
+	color: #fff;
+}
+
+
+
+

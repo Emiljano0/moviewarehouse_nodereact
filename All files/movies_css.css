@@ -1,0 +1,130 @@
+body {
+		background-color:#DCD9CD ;
+	}
+
+	a.anchor, a.anchor2{
+		text-decoration : none;
+	}
+
+	a.anchor2:hover{
+		color: #fff;
+	}
+
+	div.row {
+		padding-top:100px;
+		text-align:center;
+		margin-left:40px;
+	}
+
+	a.majlogo {
+		font-family: 'Courgette';
+		font-size: 24px;
+	}
+
+	img.imazh {
+		padding-bottom:10px;
+		width:250px;
+		background-color:black;
+		height:350px;
+	}
+
+	div.inlinemod {
+		display:inline-block;
+		background-color:black;
+		margin-bottom:50px;
+		width:250px;
+		box-shadow: 0px 10px 10px;
+	}
+
+	li.horizontal {
+		display:inline;
+	}
+
+	.pagination-wrapper {
+	  text-align: center;
+	  margin: 40px 0;
+	}
+
+	.pagination {
+		display: inline-block;
+		height: 70px;
+		margin-top: 70px;
+		padding: 0 25px;
+		border-radius: 35px;
+		background-color: #0275d8;
+	}
+
+	.page-numbers {
+		display: block;
+		padding: 0 25px;
+		float: left;
+		color: #DCD9CD;
+		font-size: 20px;
+		letter-spacing: 0.1em;
+		line-height: 70px;
+	}
+
+
+@media only screen and (min-width: 576px) {
+
+	img.imazh {
+		width:100px;
+		height:150px;
+	}
+
+	div.inlinemod{
+		width:100px;
+	}
+
+	}
+
+
+@media only screen and (min-width: 768px) {
+
+	img.imazh {
+		width:150px;
+		height:250px;
+	}
+
+	div.inlinemod{
+		width:150px;
+	}
+
+	}
+
+
+@media only screen and (min-width: 1024px) {
+
+	img.imazh {
+		width:200px;
+		height:300px;
+	}
+
+	div.inlinemod{
+		width:200px;
+	}
+
+@media only screen and (min-width: 1500px) {
+
+	img.imazh {
+		width:300px;
+		height:400px;
+	}
+
+	div.inlinemod{
+		width:300px;
+	}
+
+
+@media only screen and (min-width: 1800px) {
+
+	img.imazh {
+		width:380px;
+		height:530px;
+	}
+
+	div.inlinemod{
+		width:380px;
+	}
+
+	}
